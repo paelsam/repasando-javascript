@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Blackjack</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <h1>Imposible Blackjack 🃏👺</h1>
+        <h4>Sometimes yes, sometimes no...</h4>
+    </header>
+
+    <div class="options-container">
+        <div id="div-options" class="text-center">
+            <button type="button" id="new-game" class="m-1 btn btn-primary">New Game</button>
+            <button type="button" disabled="disabled" id="ask" class="m-1 btn btn-success">Ask Card</button>
+            <button type="button" disabled="disabled" id="stop" class="m-1 btn btn-danger">Stop</button>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center p-3">
+        <div class="col">
+            <h2>Player 🎎</h2>
+            <h3>Points: <small>0</small></h3>
+            <div id="player-cards" class="div-cards">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center p-3">
+        <div class="col">
+            <h2>Computer 👹</h2>
+            <h3>Points: <small>0</small></h3>
+            <div id="computer-cards" class="div-cards">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="results" class="col text-center">
+        
+    </div>
+
+    <!-- <footer class="footer">
+        Inspirado por: @Fernando Herrera <br>
+        Mejorado por: @paelsam
+    </footer> -->
+
+
+
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/game.js"></script>
+
+    <!-- Dar acceso de mi codigo a los demás desarrolladores -->
+    <script>
+
+        myModule.iniciarJuego();
+
+    </script>
+</body>
+
+</html>
